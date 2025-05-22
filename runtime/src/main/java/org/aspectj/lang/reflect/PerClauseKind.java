@@ -11,15 +11,16 @@
  * ******************************************************************/
 package org.aspectj.lang.reflect;
 
+// per 子句类型
 /**
  * The different per-clauses (aspect instantiation models)
  * supported by AspectJ
  */
 public enum PerClauseKind {
-	SINGLETON,
-	PERTHIS,
-	PERTARGET,
-	PERCFLOW,
-	PERCFLOWBELOW,
-	PERTYPEWITHIN;
+	SINGLETON,     // 无对应 per 子句
+	PERTHIS,       // perthis(pointcut)
+	PERTARGET,     // pertarget(pointcut)
+	PERCFLOW,      // percflow(pointcut)
+	PERCFLOWBELOW, // percflowbelow(pointcut)
+	PERTYPEWITHIN; // pertypewithin(pointcut)
 }
