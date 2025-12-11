@@ -48,6 +48,7 @@ public interface JoinPoint {
     String toLongString();
 
     /**
+     * <p>获取代理对象。</p>
      * <p> Returns the currently executing object.  This will always be
      * the same object as that matched by the <code>this</code> pointcut
      * designator.  Unless you specifically need this reflective access,
@@ -62,6 +63,7 @@ public interface JoinPoint {
     Object getThis();
 
     /**
+     * <p>获取目标对象。</p>
      * Returns the target object.  This will always be
      * the same object as that matched by the <code>target</code> pointcut
      * designator.  Unless you specifically need this reflective access,
